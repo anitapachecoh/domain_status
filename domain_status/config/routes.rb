@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
   resources :principal, path: 'status.:domain', action: 'status', :constraints => { :domain => /.+/ }
-  resources :principal, path: 'status/test', action: 'status_test'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
